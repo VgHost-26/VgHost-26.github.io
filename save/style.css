@@ -1,20 +1,4 @@
-:root{
-    font-size: 2vw;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 body{
-    /* 
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 10vw repeat(5,15vw) 10vw; 
-    grid-template-areas: "header header header",
-                         "left middle right",
-                         "footer footer footer"; 
-    */
     background-color: #333;
     color:aliceblue;
-}
-p{
-    text-align: center;
-    font-size: 2rem;
 }
