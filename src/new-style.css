@@ -1,7 +1,7 @@
-:root{
+:root {
 
     scroll-behavior: smooth;
-
+    background-color: #fff;
     --b-radius-small: 5px;
     --b-radius-med: 15px;
     --b-radius-big: 25px;
@@ -16,41 +16,47 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
-a{
+
+a {
     cursor: pointer;
 }
-img{
+
+img {
     user-select: none;
     -webkit-user-drag: none;
 }
-body{
-    background-color: #333;
-    color:aliceblue;
+
+body {
+    color: aliceblue;
     margin: 0;
 }
-p{
+
+p {
     margin: 0;
 }
-a{
+
+a {
     text-decoration: inherit;
     color: inherit;
 }
 
-#openMenuButton{
+#openMenuButton {
     position: fixed;
     top: 10px;
     left: 10px;
-    
+
     height: 40px;
     width: 40px;
     outline: 1px solid red;
 
     z-index: 15;
 }
-#openMenuCheckbox{
+
+#openMenuCheckbox {
     display: none;
 }
-#menu{
+
+#menu {
     position: fixed;
     left: 0;
     top: 0;
@@ -63,24 +69,27 @@ a{
     translate: -100% 0;
 
     transition: translate 200ms ease-out;
-    
+
     z-index: 1;
 }
-#openMenuCheckbox:checked~#menu{
+
+#openMenuCheckbox:checked~#menu {
     translate: 0 0;
 }
 
-.menu-item>a:visited{
+.menu-item>a:visited {
     color: var(--dimmed-text);
 }
-.menu-list{
+
+.menu-list {
     text-align: right;
     list-style: none;
     font-size: 1.8em;
     padding: 0;
     padding-right: 5vw;
 }
-.menu-item{
+
+.menu-item {
     width: 100%;
     margin-bottom: 20px;
     transition: .2s;
@@ -89,7 +98,8 @@ a{
     transition: color .25s;
     transition-delay: .1s;
 }
-.menu-item>hr{
+
+.menu-item>hr {
     display: block;
     margin-left: 0;
     width: 0%;
@@ -98,98 +108,104 @@ a{
     transition: width 150ms ease-out, visibility .3s;
     transition-delay: .1s;
 }
-.menu-item:hover{
+
+.menu-item:hover {
     color: white;
 }
-.menu-item:hover>hr{
-   visibility: visible;
+
+.menu-item:hover>hr {
+    visibility: visible;
 }
-.menu-item[active="true"]{
+
+.menu-item[active="true"] {
     color: white;
 }
-.menu-item[active="true"]>hr{
+
+.menu-item[active="true"]>hr {
     width: 100%;
     visibility: visible;
 }
 
-#main-content{
-    position:relative;
-    margin: auto;
-    max-width: 1000px;
-    
-    
-}
-.intro{
-    padding: 50px;
-    font-size: 1.4em;
-    background-color: #324552;
+#main-content {
+    /* position:relative; */
+    /* margin: auto; */
+    /* max-width: 1000px; */
+
 
 }
-.intro>img{
+
+.intro {
+    padding: 50px;
+    font-size: 1.4em;
+
+}
+
+.intro>img {
     float: left;
     height: 100px;
     margin: 0 20px 20px 0;
 }
 
 
-.section{
-    background-color: #324552;
-    border-radius: var(--b-radius-big);
+.section {
+    background-color: #000;
+    margin-top: 15rem;
+}
 
-    box-shadow: 5px 5px 15px 0 #222;
+.section:not(.intro) {
+    padding: 5dvh 0;
+    display: grid;
+    overflow-y: scroll;
+    grid-template-columns: repeat(4, 33dvw);
+    column-gap: 10dvw;
 }
-.section:first-child{
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
-.section:last-child{
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-.section:not(.intro){
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px 0;
-    justify-content: space-evenly;
 
-    padding: 5% 0 ;
+.section-title {
+    position: absolute;
+    z-index: -1;
 }
-.section-title{
-    height: 100px;
-    width: 100%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    
-    font-size: 4em;
-    
-}
-.section-title, p{
+
+.section-title>p {
     margin: 0;
-    text-shadow: 3px 3px 5px #222;
+    color: #eee;
+    font-size: 15rem;
+    text-transform: uppercase;
+    /* background-color: red; */
+    mask: linear-gradient(white 50%, transparent 90%);
 }
 
 
-.element{
+.element {
     max-width: 400px;
     /* background-color: #07aab6; */
 }
-.element>.title{
+
+.element>.title {
     font-size: 2.5em;
     text-align: center;
     padding: 0 0 10px 0;
     width: 100%;
 }
 
-.element>.content>img{
+.element>.content>img {
     width: 100%;
 
 
     border-radius: var(--b-radius-med);
 }
 
-footer{
+footer {
     height: 100px;
     background-color: black;
+}
+
+.img-gif{
+  filter: grayscale(1) blur(2px); 
+  transition: filter .2s;
+  
+}
+.img-gif:hover{
+    cursor: pointer;
+    filter: grayscale(0) blur(0); 
+    
 }

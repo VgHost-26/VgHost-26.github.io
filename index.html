@@ -1,61 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1920, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/new-style.css">
+    <link rel="stylesheet" href="src/menu-button-style.css">
+
+
+
     <title>My Portfolio</title>
 </head>
+
 <body>
     <!-- <p>This page is under construction</p> -->
 
+    <label for="openMenuCheckbox" id="openMenuButton">
+        <span class="chamburger-line chamburger-line-upper"></span>
+        <span class="chamburger-line chamburger-line-middle"></span>
+        <span class="chamburger-line chamburger-line-lower"></span>
+    </label>
+    <input id="openMenuCheckbox" type="checkbox" />
+    <div id="menu">
+        <ul class="menu-list">
+            <div class="menu-item">
+                <a href="#sectionAbout">About</a>
+                <hr />
+            </div>
+            <div class="menu-item">
+                <a href="#sectionWebTitle">Websites</a>
+                <hr>
+            </div>
+            <div class="menu-item">
+
+                <a href="#sectionGamesTitle">Games</a>
+
+                <hr>
+            </div>
+            <div class="menu-item">
+                <a href="#sectionAppsTitle">Apps</a>
+                <hr>
+            </div>
+            <div class="menu-item">
+                <a href="#section3DTitle">3D</a>
+                <hr>
+            </div>
+        </ul>
+    </div>
+
     <div id="main-content">
 
-        <div class="section intro">
+        <div id="sectionAbout" class="section intro">
             <img src="test-image.jpg">
-            <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+            <div class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 
         </div>
 
-        <div class="section-title">
-            <p>Section Title</p>
+
+
+        <div id="sectionWebTitle" class="section-title">
+            <p data-bottom-top="translate: -100% 0;" data-top-bottom="translate: 50% 0">Websites</p>
+        </div>
+        <div class="section websites">
+
+            <div class="element">
+                <div class="title">
+                    <p>My Portfolio</p>
+                </div>
+                <div class="content">
+                    <img src="test-image.jpg">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sectionGamesTitle" class="section-title">
+            <p data-bottom-top="translate: -100% 0;" data-top-bottom="translate: 50% 0">
+                Games
+            </p>
         </div>
         <div class="section games">
-            
+
             <div class="element">
-                <div class="title">title</div>
+                <div class="title">
+                    <p>TRON</p>
+                </div>
+                <div class="content">
+                    <img class="img-gif" src="src/resurces/tron.webp">
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="title">
+                    <p>Space Invaders</p>
+                </div>
                 <div class="content">
                     <img src="test-image.jpg">
                 </div>
             </div>
 
             <div class="element">
-                <div class="title">title2</div>
+                <div class="title">
+                    <p>Monopoly POLSL</p>
+                </div>
                 <div class="content">
                     <img src="test-image.jpg">
                 </div>
             </div>
-            
+
             <div class="element">
-                <div class="title">title</div>
+                <div class="title">
+                    <p>Bomberman</p>
+                </div>
                 <div class="content">
                     <img src="test-image.jpg">
                 </div>
             </div>
-            
+        </div>
+        <div id="sectionAppsTitle" class="section-title">
+            <p data-bottom-top="translate: -100% 0;" data-top-bottom="translate: 50% 0">Apps</p>
+        </div>
+        <div class="section websites">
+
             <div class="element">
-                <div class="title">title2</div>
+                <div class="title">
+                    <p>Movie Calendar</p>
+                </div>
                 <div class="content">
                     <img src="test-image.jpg">
                 </div>
             </div>
 
         </div>
+        <div id="section3DTitle" class="section-title">
+            <p data-bottom-top="translate: -100% 0;" data-top-bottom="translate: 50% 0">3D Arts</p>
+        </div>
+        <div class="section websites">
 
+            <div class="element">
+                <div class="title">
+                    <p>Some models</p>
+                </div>
+                <div class="content">
+                    <img src="test-image.jpg">
+                </div>
+            </div>
+
+        </div>
     </div>
     <footer>
         footer
     </footer>
 </body>
+<script type="text/javascript" src="src/sm/dist/skrollr.min.js"></script>
+<script type="text/javascript" src="src/script.js"></script>
+<script>
+    skrollr.init()
+</script>
+
 </html>
