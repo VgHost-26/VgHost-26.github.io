@@ -344,9 +344,8 @@
       <div class="info">Made by Marcin Widuch <br />2024</div>
     </footer>
   </body>
-  <script type="text/javascript" src="src/sm/dist/skrollr.min.js"></script>
-  <!-- <script type="text/javascript" src="src/script.js"></script> -->
-  <script>
+  <script defer type="text/javascript" src="src/sm/dist/skrollr.min.js"></script>
+  <script defer>
     skrollr.init()
 
     const menuDialog = document.getElementById("menu")
@@ -361,7 +360,7 @@
       menuDialog.addEventListener("webkitAnimationEnd", removeClassAndClose)
     }
   </script>
-  <script src="src/sliders.js"></script>
-  <script src="src/abberation.js"></script>
-  <script src="src/contactFade.js"></script>
+  <script defer src="src/sliders.js"></script>
+  <script defer src="src/abberation.js"></script>
+  <script defer src="src/contactFade.js"></script>
 </html>
