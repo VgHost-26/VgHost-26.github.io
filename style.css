@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
 @font-face {
     font-family: "Tommy's First Alphabet";
     src: url(src/fonts/tommys.ttf);
 }
+
 @font-face {
     font-family: "bulletin gothic";
     src: url(src/fonts/BulletinGothic.otf);
 }
+
+@font-face {
+    font-family: "Kenyan Coffee Rg";
+    src: url(src/fonts/kenyanCoffeeRg.otf);
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     /* scroll-behavior: smooth; */
@@ -76,7 +84,8 @@ a {
     line-height: 2em;
     font-family: 'bulletin gothic';
     position: absolute;
-    color: #0d0d0d;
+    /* color: #0d0d0d; */
+    color: #111;
 
 }
 
