@@ -470,6 +470,8 @@ a {
     z-index: 0;
     transition: translate .75s, filter 1s;
     transition-timing-function: var(--timing-fun);
+
+    filter: contrast(.9);
 }
 
 .section-item>.cover {
