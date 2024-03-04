@@ -20,7 +20,6 @@
     /* background-color: #fff; */
     color: var(--text-color);
 
-    /* height: 300dvh; */
     margin: 0;
     font-size: 2dvw;
     /* scroll-snap-type: y mandatory; */
@@ -570,7 +569,7 @@ a {
     height: 100dvh;
     margin-top: -100dvh;
     top: 0;
-    color: #0c0c0d;
+    color: #111;
     font-size: 34dvw;
     font-family: 'bulletin gothic', 'Kenyan Coffee Rg';
     display: flex;
@@ -590,7 +589,8 @@ a {
 footer {
     background: transparent;
     height: 90dvh;
-    position: relative;
+    /* position: sticky;
+    top: 0; */
     z-index: 90;
 
     backdrop-filter: blur(10px);

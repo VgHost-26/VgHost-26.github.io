@@ -39,8 +39,8 @@
     <div
       class="title-wrapper"
       data-anchor-target="#section-games"
-      data-center-center="filter: opacity(1);"
-      data-top-top="filter: opacity(0);"
+      data-center-center="filter: opacity(1); position:sticky;"
+      data-top-top="filter: opacity(0); position:relative;"
     >
       <span class="section-title abberation">GAMES.</span>
     </div>
@@ -179,9 +179,9 @@
       class="title-wrapper"
       data-anchor-target="#section-websites"
       data-center-center="filter: opacity(1);
-                        scale:1;"
+                        scale:1; position:sticky;"
       data-top-top="filter: opacity(0);
-                  scale:.9;"
+                  scale:.9; position:relative;"
     >
       <span class="section-title abberation"> WEBSITES. </span>
     </div>
@@ -346,8 +346,6 @@
   </body>
   <script type="text/javascript" src="src/SM/dist/skrollr.min.js"></script>
   <script defer>
-    skrollr.init()
-
     const menuDialog = document.getElementById("menu")
     function removeClassAndClose() {
       console.log("closing")
@@ -363,4 +361,7 @@
   <script defer src="src/sliders.js"></script>
   <script defer src="src/abberation.js"></script>
   <script defer src="src/contactFade.js"></script>
+  <script defer>
+    skrollr.init()
+  </script>
 </html>

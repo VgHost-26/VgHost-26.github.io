@@ -15,8 +15,9 @@ function changeSign(name) {
       if (name.length > 8) {
         reducedSize = (name.length - 8) * 2
       }
+
       let time = 100
-      let animatedName = ""
+      let animatedName = "."
       let i = 0
       const letters = name.split("")
 
