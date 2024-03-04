@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: "Gulletin Gothic";
+    font-family: "Bulletin Gothic";
     src: url(src/fonts/BulletinGothicPlus.ttf);
 }
 
@@ -82,7 +82,7 @@ a {
     letter-spacing: .5em;
     padding-left: .25em;
     line-height: 2em;
-    font-family: 'Bulletin Gothic';
+    font-family: 'Bulletin Gothic' , 'Kenyan Coffee Rg';
     position: absolute;
     /* color: #0d0d0d; */
     color: #111;
@@ -111,7 +111,7 @@ a {
     align-items: center;
     justify-content: center;
     margin: auto;
-    font-family: 'bulletin gothic', 'Kenyan Coffee Rg';
+    font-family: 'Bulletin Gothic', 'Kenyan Coffee Rg';
     font-size: 31.5dvw;
     user-select: none;
     color: #0f0;
@@ -145,7 +145,7 @@ a {
 
 
 #myname {
-    font-family: 'bulletin gothic';
+    font-family: 'Bulletin Gothic', 'Kenyan Coffee Rg';
     font-size: 3dvw;
 }
 
@@ -157,7 +157,7 @@ a {
     width: 100dvw;
     background-color: #fff;
     color: #000;
-    font-family: 'bulletin gothic', 'Kenyan Coffee Rg';
+    font-family: 'Bulletin Gothic', 'Kenyan Coffee Rg';
 
 }
 
