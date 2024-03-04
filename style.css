@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: "bulletin gothic";
-    src: url(src/fonts/BulletinGothic.otf);
+    font-family: "Gulletin Gothic";
+    src: url(src/fonts/BulletinGothicPlus.ttf);
 }
 
 @font-face {
@@ -82,7 +82,7 @@ a {
     letter-spacing: .5em;
     padding-left: .25em;
     line-height: 2em;
-    font-family: 'bulletin gothic';
+    font-family: 'Bulletin Gothic';
     position: absolute;
     /* color: #0d0d0d; */
     color: #111;
@@ -162,8 +162,8 @@ a {
 }
 
 .number-fix {
-    font-size: .85em;
-    font-weight: 600;
+    /* font-size: .85em; */
+    /* font-weight: 600; */
 }
 
 #menu[open] {
@@ -400,6 +400,8 @@ a {
     overflow: hidden;
     height: calc(80dvw * 9 / 16);
     width: 80dvw;
+    /* height: 85dvh;
+    width: calc(90dvh * 16 / 9); */
     margin: auto;
 
     position: absolute;
