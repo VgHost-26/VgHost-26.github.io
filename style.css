@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
-
+@font-face {
+    font-family: "Tommy's First Alphabet";
+    src: url(src/fonts/tommys.ttf);
+}
+@font-face {
+    font-family: "bulletin gothic";
+    src: url(src/fonts/BulletinGothic.otf);
+}
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     /* scroll-behavior: smooth; */
@@ -41,14 +48,19 @@ a {
     cursor: pointer;
 }
 
+.signature {
+    font-family: "Tommy's First Alphabet";
+    font-size: 1.3em;
+}
+
 .anchor-offset {
     position: relative;
     top: -8dvh;
 }
 
 #title {
-    position: sticky;
-    top: 10px;
+    /* position: sticky; */
+    /* top: 10px; */
 }
 
 #name {
@@ -588,7 +600,10 @@ a {
 
 footer {
     background: transparent;
-    height: 90dvh;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* position: sticky;
     top: 0; */
     z-index: 90;
@@ -596,6 +611,8 @@ footer {
     backdrop-filter: blur(10px);
 
     .info {
+        position: absolute;
+        bottom: 0;
         margin-left: 20px;
         margin-bottom: 20px;
         font-size: .5rem;
@@ -606,12 +623,12 @@ footer {
 .social {
     list-style: none;
     margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    align-items: center;
 
     li {
         margin-top: 50px;

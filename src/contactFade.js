@@ -17,7 +17,7 @@ function changeSign(name) {
       }
 
       let time = 100
-      let animatedName = "."
+      let animatedName = ""
       let i = 0
       const letters = name.split("")
 
