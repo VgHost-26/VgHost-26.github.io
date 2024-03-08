@@ -82,7 +82,7 @@ a {
     letter-spacing: .5em;
     padding-left: .25em;
     line-height: 2em;
-    font-family: 'Bulletin Gothic' , 'Kenyan Coffee Rg';
+    font-family: 'Bulletin Gothic', 'Kenyan Coffee Rg';
     position: absolute;
     /* color: #0d0d0d; */
     color: #111;
@@ -269,7 +269,7 @@ a {
     height: 100%;
     width: 100%;
     display: flex;
-    font-size: 10dvw;
+    font-size: 20dvh;
     flex-direction: column;
     align-items: start;
     justify-content: flex-end;
@@ -311,15 +311,16 @@ a {
 }
 
 #menu-button {
+    background-color: red;
     float: right;
     visibility: hidden;
     position: sticky;
-    top: -60dvh;
-    transition: .2s;
+    top: calc(-50dvh - .2ex);
+    /* transition: .2s; */
     z-index: 999;
-
+    
     >* {
-        transition: .2s;
+        transition: 1s;
 
     }
 }
