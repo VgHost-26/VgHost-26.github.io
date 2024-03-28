@@ -659,3 +659,25 @@ footer {
         scale: 1.1;
     }
 }
+#mobileAlert{
+    height: 60dvh;
+    width: 80dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.2em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+
+    button{
+        height: fit-content;
+        width: fit-content;
+        font-size: 1em;
+        padding: 5px 20px;
+        margin: 10px;
+    }
+
+}
