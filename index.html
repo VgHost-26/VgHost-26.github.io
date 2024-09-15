@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=400px, initial-scale=2.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <title>Martinez Portfolio</title>
+    <title>Marcin Widuch Portfolio</title>
   </head>
 
   <body>
@@ -495,6 +495,14 @@
         Made by <span class="signature">Marcin Widuch</span>
       </div>
     </footer>
+    <dialog id="mobileAlert">
+      <div>
+        Please view this page on desktop.<br/>
+        Mobile version is in production.<br/>
+        <button onclick="mobileAlert.close()">OK</button>
+
+      </div>
+    </dialog>
   </body>
   <script type="text/javascript" src="src/SM/dist/skrollr.min.js"></script>
   <script defer>
@@ -509,6 +517,11 @@
       menuDialog.classList.add("hide")
       menuDialog.addEventListener("webkitAnimationEnd", removeClassAndClose)
     }
+
+    if(window.innerHeight > window.innerWidth){
+      document.getElementById("mobileAlert").showModal()
+    }
+
   </script>
   <script defer src="src/sliders.js"></script>
   <script defer src="src/abberation.js"></script>
@@ -516,4 +529,5 @@
   <script defer>
     skrollr.init()
   </script>
+  
 </html>
