@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=1920, initial-scale=1.0" />
+    <meta name="viewport" content="width=400px, initial-scale=2.0" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Martinez Portfolio</title>
@@ -13,13 +13,15 @@
     <dialog id="menu">
       <span id="close-menu-button" onclick="closeDialogAnimation()"></span>
       <div class="menu-positions">
+        <a href="#section-programs" onclick="closeDialogAnimation()"
+          >PROGRAMS.</a
+        >
         <a href="#section-games" onclick="closeDialogAnimation()">GAMES.</a>
+        <a href="#section-ai" onclick="closeDialogAnimation()">AI.</a>
         <a href="#section-websites" onclick="closeDialogAnimation()"
           >WEBSITES.</a
         >
-        <a href="#section-3d" onclick="closeDialogAnimation()"
-          >3D.</a
-        >
+        <a href="#section-3d" onclick="closeDialogAnimation()">3D.</a>
         <a href="#footer" onclick="closeDialogAnimation()">CONTACT.</a>
       </div>
     </dialog>
@@ -35,6 +37,66 @@
     </div>
 
     <span id="portfolio" class="abberation">PORTFOLIO</span>
+
+    <div
+      class="title-wrapper"
+      data-anchor-target="#section-programs"
+      data-center-center="filter: opacity(1);
+                        scale:1;"
+      data-top-top="filter: opacity(0);
+                  scale:.9; "
+    >
+      <span class="section-title abberation"> PROGRAMS. </span>
+    </div>
+    <span id="section-programs" class="anchor-offset"></span>
+    <div class="section">
+      <div class="section-item">
+        <div class="section-wrapper">
+          <div class="tech-list">
+            <img title="GO" alt="GO" src="src/resurces/logos/logo-go.png" />
+          </div>
+          <div class="description">
+            <div class="item-title">
+              Elevator System
+
+              <div class="date">2023</div>
+            </div>
+            <div class="details">
+              <img
+                data-center-center="transform: translate(0px, 90px);"
+                data-top-top="transform: translate(0px, 0px);"
+                id="gopher"
+                src="src/resurces/logos/gopher.png"
+              />
+              <p>
+                My biggest project yet and I'm really proud of it.<br />
+                It was final project at
+                <a href="https://www.ntnu.edu"><u>NTNU</u></a> and the main goal
+                was to create a software for controlling <i>n</i> elevators
+                working in parallel across <i>m</i> floors which is:
+
+                <b>Reliable</b>, <b>Concurrent</b>, <b>Synchronious</b>,
+                <b>Efficent</b> and <b>Fail-Safe</b>
+              </p>
+
+              <span class="links">
+                <a
+                  target="_blank"
+                  href="https://github.com/TTK4145-Students-2023/project-group-91/tree/master"
+                >
+                  Code
+                  <img
+                    alt="website_link"
+                    src="src/resurces/logos/logo-github-w.png"
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <img src="src/resurces/images/elevators3.jpg" />
+      </div>
+    </div>
 
     <div
       class="title-wrapper"
@@ -177,6 +239,62 @@
 
     <div
       class="title-wrapper"
+      data-anchor-target="#section-ai"
+      data-center-center="filter: opacity(1);
+                        scale:1;"
+      data-top-top="filter: opacity(0);
+                  scale:.9; "
+    >
+      <span class="section-title abberation"> AI. </span>
+    </div>
+    <span id="section-ai" class="anchor-offset"></span>
+    <div class="section">
+      <div class="section-item">
+        <div class="section-wrapper">
+          <div class="tech-list">
+            <img
+              title="Python"
+              alt="Python"
+              src="src/resurces/logos/logo-python.png"
+            />
+          </div>
+          <div class="description">
+            <div class="item-title">
+              Markov Decision Process
+
+              <div class="date">2023</div>
+            </div>
+            <div class="details">
+              <p>
+                While studying AI Methods at
+                <a href="https://www.ntnu.edu/"><u>NTNU</u></a> one of the
+                assigments was to create Value Iteration Simulation where agend
+                had to pass frozen lake with deadly holes in it.
+                <br />
+                It was one of my favourite assigments there.
+              </p>
+
+              <span class="links">
+                <a
+                  target="_blank"
+                  href="https://github.com/VgHost-26/MDP-Value-Iteration-Simulation"
+                >
+                  Code
+                  <img
+                    alt="website_link"
+                    src="src/resurces/logos/logo-github-w.png"
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <img src="src/resurces/images/markov2.jpg" />
+      </div>
+    </div>
+
+    <div
+      class="title-wrapper"
       data-anchor-target="#section-websites"
       data-center-center="filter: opacity(1);
                         scale:1;"
@@ -280,40 +398,33 @@
         <div class="section-wrapper">
           <div class="tech-list">
             <img
-            title="Blender"
-            alt="Blender"
-            src="src/resurces/logos/logo-blender.png"
+              title="Blender"
+              alt="Blender"
+              src="src/resurces/logos/logo-blender.png"
             />
-            
           </div>
           <div class="description">
             <div class="item-title">
-              
               <div class="date"></div>
             </div>
             <div class="details">
-              <p>
-                For more 3D projects visit my ArtStation profile
-              </p>
-              
+              <p>For more 3D projects visit my ArtStation profile</p>
+
               <span class="links">
                 <a
-                target="_blank"
-                href="https://www.artstation.com/marcinwiduch"
+                  target="_blank"
+                  href="https://www.artstation.com/marcinwiduch"
                 >
-                Go to
+                  Go to
                   <img alt="website_link" src="src/resurces/logos/web.png" />
                 </a>
               </span>
             </div>
           </div>
         </div>
-          <img  src="src/resurces/images/3d-cover1.jpg" />
-
+        <img src="src/resurces/images/3d-cover1.jpg" />
       </div>
-
     </div>
-
 
     <div class="blackspace"></div>
     <span id="contact">CONTACT.</span>
@@ -362,7 +473,11 @@
           </a>
         </li>
         <li>
-          <a name="artstation" target="_blank" href="https://www.artstation.com/marcinwiduch">
+          <a
+            name="artstation"
+            target="_blank"
+            href="https://www.artstation.com/marcinwiduch"
+          >
             <svg
               class="logo"
               xmlns="http://www.w3.org/2000/svg"

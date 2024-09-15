@@ -269,10 +269,9 @@ a {
     height: 100%;
     width: 100%;
     display: flex;
-    font-size: 20dvh;
+    font-size: 13dvh;
     flex-direction: column;
     align-items: start;
-    justify-content: flex-end;
 }
 
 .menu-positions>a {
@@ -318,7 +317,7 @@ a {
     top: calc(-50dvh - .2ex);
     /* transition: .2s; */
     z-index: 999;
-    
+
     >* {
         transition: 1s;
 
@@ -658,4 +657,65 @@ footer {
     svg:hover {
         scale: 1.1;
     }
+}
+
+#gopher{
+    position: absolute;
+    height: 100px;
+    rotate: 135deg;
+    top: -20px;
+    left: -20px;
+
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    :root {
+        /* background-color: #fff; */
+        font-size: 2dvh;
+    }
+
+    .abberation {
+        rotate: -90deg;
+        translate: 1em;
+        letter-spacing: .1em;
+    }
+
+    .title-wrapper {
+        top: -10em;
+    }
+
+    .section {
+
+        /* height: 80dvh; */
+    }
+
+    .section-item {
+        /* height: 80dvh; */
+        /* background-color: #fff; */
+    }
+
+    .section-item>img,
+    .section-item>video {
+        /* height: 100dvh !important; */
+        /* width: auto !important; */
+        
+    }
+    .social{
+        height: 100dvh;
+        flex-direction: column;
+        translate: -25% -3dvh;
+        svg{
+            height: 5rem;
+        }
+        
+    }
+    #contact{
+        /* font-size: 25dvh; */
+        scale: 2;
+        rotate: -90deg;
+        translate: 25%;
+    }
+
 }
