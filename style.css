@@ -592,6 +592,8 @@ a {
 #contact {
     position: sticky;
     height: 100dvh;
+    width: 0dvw;
+    translate: 50dvw 0;
     margin-top: -100dvh;
     top: 0;
     color: #111;
@@ -600,7 +602,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     z-index: -10;
 }
 
@@ -635,9 +636,9 @@ footer {
 
 .social {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100dvw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -645,18 +646,18 @@ footer {
 
     li {
         margin-top: 50px;
+        transition: scale .2s;
     }
 
     svg {
         height: 2rem;
         fill: #888;
         user-select: none;
-        transition: scale .2s;
     }
-
-    svg:hover {
+    li:hover {
         scale: 1.1;
-    }
+    } 
+
 }
 
 #gopher{
